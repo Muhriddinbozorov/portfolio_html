@@ -1,7 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="uz">
+    <head>
+        <title>Shaxsiy Sahifa</title>
+    </head>
     <body>
-        <h1>Salom dunyo</h1>
-        <p>Portfolio uchun maxsus</p>
+        <!-- bosh qism -->
+        <section class="bosh-qism">
+             <header>
+            <img src="images/portfolio_image.jpg" alt="Shaxsiy sahifa rasmi" id="portfolio-image">
+            <h2>Muhriddin Bozorov</h2>
+            <p>Asslalomu alaykum! Mening ismim Muhriddin. Men Veb dasturlash va loyihalashni yaxshi ko'raman.</p>
+        </header>
+        </section>
+        <!-- /Bosh qism -->
+
+        <!-- Havola qismi -->
+        <section class="havolalar">
+            <div>
+                <p>
+                    <b>Ijtimoiy tarmoqlar uchun havolalar</b>
+                </p>
+                <table>
+                    <tr>
+                        <th>Nomi</th><th>Havola</th>
+                    </tr>
+                    <tr>
+                        <td>Telegram:</td><td>https://t.me/Blue_Moon_uzb</td>
+                    </tr>
+                    <tr>
+                        <td>YouTube:</td><td>https://youtube.com/@muhriddinbozorov390?si=ZpvvyMnQSYnQHtB_</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook:</td><td>https://www.facebook.com/share/19xTdD1A9E/?mibextid=wwXIfr</td>
+                    </tr>
+                </table>
+            </div>
+        </section><br>  
+        <!-- /Havola Qismi -->
+
+        <!-- Aloqa qismi -->
+         <section class="aloqalar">
+            <h3>Men bilan bog'lanish</h3>
+            <form action="/register" method="POST">
+                <label for="username">Ismingiz:</label>
+                <input type="text" id="username" name="username" placeholder="Ismingizni kiriting:">
+                <label for="phone">Telefon raqami:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67">
+                <button type="submit">Yuborish</button>
+            </form>
+         </section><br><br>
+         <!-- /Aloqa qismi -->
     </body>
 </html>
