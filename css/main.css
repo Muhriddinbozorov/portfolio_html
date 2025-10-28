@@ -1,4 +1,4 @@
-
+/* asosiy stillar */
 body {
     background-color: bisque;
     font-family: sans-serif;
@@ -60,4 +60,95 @@ body {
 
 .main-navigation-item.active a{
     color: black;
+}
+
+.katta_harf {
+    text-transform: uppercase;
+}
+
+.text-dec__none {
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* about me section */
+
+.about-me {
+    padding: 100px 30px;
+}
+
+.about-me > div {
+    width: 50%;
+    float: left;
+}
+
+
+.about-me__image img {
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.about-me__info {
+    padding-top: 50px;
+}
+
+.about-me__welcome {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: rgba(23, 37, 28, 0.836);
+}
+
+.about-me__introduction {
+    margin-top: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgba(27, 8, 17, 0.514);
+}
+
+.about-me__position {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(2, 6, 8);
+}
+
+.about-me__description {
+    display: inline-block;
+    margin-left: 100px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    max-width: 400px;
+    color: rgba(13, 13, 14, 0.863);
+}
+
+/* information section */
+
+.information-section > div {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 30px 30px;
+}
+.resume-link {
+    background-color: red;
+    border-radius: 50px;
+}
+
+.information-section {
+    padding: 20px 100px;
+}
+
+.color-info-item {
+    color: rgb(19, 18, 18);
+    font-size: 24px;
 }
