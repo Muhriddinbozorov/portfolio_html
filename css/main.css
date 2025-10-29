@@ -1,6 +1,6 @@
 /* asosiy stillar */
 body {
-    background-color: bisque;
+    background-color: rgba(80, 79, 129, 0.616);
     font-family: sans-serif;
 }
 
@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(90, 44, 12);
+    background-color: rgba(32, 16, 4, 0.719);
 }
 
 .main-header__logo{
@@ -74,10 +74,10 @@ body {
     clear: both;
 }
 
-/* about me section */
+/* about-me section */
 
 .about-me {
-    padding: 100px 30px;
+    padding: 100px 30px 10px 30px;
 }
 
 .about-me > div {
@@ -90,7 +90,7 @@ body {
     width: 350px;
     height: 350px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 100px;
     border-radius: 50%;
 }
 
@@ -103,6 +103,7 @@ body {
     font-weight: 400;
     margin-bottom: 20px;
     letter-spacing: 2px;
+    line-height: 10px;
     color: rgba(23, 37, 28, 0.836);
 }
 
@@ -123,7 +124,7 @@ body {
 
 .about-me__description {
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 50px;
     letter-spacing: 1px;
     line-height: 24px;
     max-width: 400px;
@@ -132,23 +133,62 @@ body {
 
 /* information section */
 
+.information-section {
+    padding: 10px 50px 100px 50px;
+}
+
 .information-section > div {
     display: inline-block;
     font-size: 24px;
     font-weight: 400;
     margin-top: 20px;
-    padding: 30px 30px;
+    padding: 40px 30px;
+    border-radius: 50%;
 }
 .resume-link {
-    background-color: red;
-    border-radius: 50px;
-}
-
-.information-section {
-    padding: 20px 100px;
+    background-color: rgb(9, 50, 73);
+    min-width: 80px;
 }
 
 .color-info-item {
-    color: rgb(19, 18, 18);
+    color: rgb(226, 217, 217);
     font-size: 24px;
+}
+
+/* footer */
+
+.footer-section {
+    background-color: rgba(32, 16, 4, 0.719);
+    color: white;             
+    padding: 50px 0;
+}
+
+.footer-items::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-items > div {
+    width: 30%;
+    float: left;
+    padding-left: 30px;
+    color: rgba(243, 221, 221, 0.767);
+}
+
+.footer-item h3 {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.footer-item p {
+    margin: 20px 0;
+}
+
+.footer-item > a {
+    color: azure;
+    padding-left: 10px;
+    font-size: 20px;
 }
