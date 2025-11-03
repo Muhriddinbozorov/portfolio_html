@@ -1,4 +1,4 @@
-/* core style */
+/* Core style */
 * {
     margin: 0;
     padding: 0;
@@ -63,92 +63,85 @@ body {
     color: rgb(202, 230, 255);
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, border-bottom 0.3s;
-    padding-bottom: 4px;
+    transition: color 0.3s;
 }
 
-/* Hover va active effekt */
-.main-navigation a:hover,
+.main-navigation a:hover {
+    color: #38bdf8;
+}
+
+/* Active link */
 .main-navigation a.active {
     color: #38bdf8;
 }
 
-/* About me section */
-.about-me {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 120px 0 60px;
+/* Projects Section */
+.projects-section {
+    padding: 120px 0 80px;
+    text-align: center;
 }
 
-.about-me__info {
-    flex: 1;
-    min-width: 300px;
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: rgb(30, 30, 30);
 }
 
-.about-me__welcome {
-    font-size: 16px;
-    color: #222;
-    letter-spacing: 1px;
-}
-
-.about-me__introduction {
-    font-size: 42px;
-    color: #222;
-    margin: 10px 0;
-}
-
-.about-me__position {
-    font-size: 20px;
-    color: #000;
-    margin-bottom: 15px;
-}
-
-.about-me__description {
-    max-width: 450px;
-    color: rgba(13, 13, 14, 0.863);
-}
-
-.about-me__image img {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-/*Information section*/
-.information-section {
-    display: flex;
-    justify-content: center;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    flex-wrap: wrap;
-    padding: 60px 0;
 }
 
-.resume-link {
-    background-color: rgb(9, 50, 73);
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
+.project-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.resume-link:hover {
-    background-color: rgb(20, 80, 110);
-    transform: scale(1.05);
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
-.color-info-item {
-    color: rgb(226, 217, 217);
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-title {
     font-size: 20px;
-    text-decoration: none;
+    margin: 15px 0 8px;
+    color: rgb(79, 37, 83);
 }
 
-/* Footer section */
+.project-desc {
+    padding: 0 15px 15px;
+    font-size: 15px;
+    color: #444;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+.project-links a {
+    color: rgb(79, 37, 83);
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.project-links a:hover {
+    color: #38bdf8;
+}
+
+/* Footer */
 .footer-section {
     background-color: rgb(79, 37, 83);
     color: white;
@@ -190,19 +183,10 @@ body {
     color: rgb(138, 173, 204);
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media (max-width: 768px) {
     .main-header__logo h2 {
         font-size: 16px;
-    }
-
-    .about-me {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-me__image img {
-        margin: 20px 0;
     }
 
     .main-navigation ul {
@@ -211,9 +195,8 @@ body {
         gap: 10px;
     }
 
-    .information-section {
-        flex-direction: column;
-        align-items: center;
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     .footer-items {

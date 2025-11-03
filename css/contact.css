@@ -1,4 +1,4 @@
-/* core style */
+/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
@@ -63,92 +63,100 @@ body {
     color: rgb(202, 230, 255);
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, border-bottom 0.3s;
-    padding-bottom: 4px;
+    transition: color 0.3s;
 }
 
-/* Hover va active effekt */
-.main-navigation a:hover,
+.main-navigation a:hover {
+    color: #38bdf8;
+}
+
 .main-navigation a.active {
     color: #38bdf8;
 }
 
-/* About me section */
-.about-me {
+/* Contact Section */
+.contact-section {
+    padding: 120px 0 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 120px 0 60px;
 }
 
-.about-me__info {
-    flex: 1;
-    min-width: 300px;
+.contact-container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #4b4b7a;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    color: #e2e8f0;
 }
 
-.about-me__welcome {
+.contact-container h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #cbd5e1;
+}
+
+/* Form */
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    background-color: #38bdf8;
+    border: none;
+    padding: 14px;
     font-size: 16px;
-    color: #222;
-    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #0f172a;
+    transition: background-color 0.3s;
 }
 
-.about-me__introduction {
-    font-size: 42px;
-    color: #222;
-    margin: 10px 0;
+.btn:hover {
+    background-color: #0ea5e9;
 }
 
-.about-me__position {
-    font-size: 20px;
-    color: #000;
-    margin-bottom: 15px;
-}
-
-.about-me__description {
-    max-width: 450px;
-    color: rgba(13, 13, 14, 0.863);
-}
-
-.about-me__image img {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-/*Information section*/
-.information-section {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 60px 0;
-}
-
-.resume-link {
-    background-color: rgb(9, 50, 73);
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
-}
-
-.resume-link:hover {
-    background-color: rgb(20, 80, 110);
-    transform: scale(1.05);
-}
-
-.color-info-item {
-    color: rgb(226, 217, 217);
-    font-size: 20px;
-    text-decoration: none;
-}
-
-/* Footer section */
+/* Footer */
 .footer-section {
     background-color: rgb(79, 37, 83);
     color: white;
@@ -172,11 +180,6 @@ body {
 .footer-item h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-.footer-item p {
-    margin-bottom: 10px;
 }
 
 .footer-item a {
@@ -190,30 +193,16 @@ body {
     color: rgb(138, 173, 204);
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media (max-width: 768px) {
-    .main-header__logo h2 {
-        font-size: 16px;
-    }
-
-    .about-me {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-me__image img {
-        margin: 20px 0;
-    }
-
     .main-navigation ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    .information-section {
-        flex-direction: column;
-        align-items: center;
+    .contact-container {
+        padding: 25px;
     }
 
     .footer-items {
