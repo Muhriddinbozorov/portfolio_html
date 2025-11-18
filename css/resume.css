@@ -1,4 +1,6 @@
-/* CORE STYLE */
+/* ============================
+   CORE STYLE
+=============================== */
 * {
     margin: 0;
     padding: 0;
@@ -6,21 +8,24 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Background – modern light gradient */
 body {
     background: linear-gradient(135deg, #dadbe8, #b8b8d4);
     color: #1a1a1a;
     line-height: 1.6;
 }
 
-/* Container */
+/* ============================
+   CONTAINER
+=============================== */
 .container {
     width: 90%;
     max-width: 1140px;
     margin: 0 auto;
 }
 
-/* ===== HEADER ===== */
+/* ============================
+   HEADER
+=============================== */
 .main-header {
     position: fixed;
     top: 0;
@@ -29,8 +34,8 @@ body {
     backdrop-filter: blur(8px);
     background: rgba(79, 37, 83, 0.65);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    z-index: 10;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 10;
 }
 
 .header-container {
@@ -41,9 +46,9 @@ body {
 
 .main-header__logo a {
     display: flex;
-    text-decoration: none;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
 }
 
 .main-header__logo img {
@@ -52,7 +57,7 @@ body {
     border-radius: 50%;
     border: 3px solid rgba(255,255,255,0.45);
     box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .main-header__logo img:hover {
@@ -63,10 +68,9 @@ body {
     color: #fff;
     font-size: 22px;
     font-weight: 600;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
 }
 
-/* Navigation */
 .main-navigation ul {
     list-style: none;
     display: flex;
@@ -74,22 +78,22 @@ body {
 }
 
 .main-navigation a {
+    position: relative;
     color: rgb(230, 240, 255);
-    text-decoration: none;
     font-weight: 600;
     padding-bottom: 5px;
-    transition: 0.3s ease;
-    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 /* Underline animation */
 .main-navigation a::after {
     content: "";
     position: absolute;
-    width: 0%;
-    height: 3px;
     left: 0;
     bottom: -4px;
+    width: 0;
+    height: 3px;
     background-color: #38bdf8;
     border-radius: 5px;
     transition: width 0.3s ease;
@@ -105,7 +109,9 @@ body {
     color: #38bdf8;
 }
 
-/* ===== ABOUT ME ===== */
+/* ============================
+   ABOUT ME SECTION
+=============================== */
 .about-me {
     display: flex;
     justify-content: space-between;
@@ -152,14 +158,16 @@ body {
     border-radius: 50%;
     border: 5px solid rgba(255,255,255,0.6);
     box-shadow: 0 8px 18px rgba(0,0,0,0.3);
-    transition: 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
 .about-me__image img:hover {
     transform: scale(1.06);
 }
 
-/* ===== INFORMATION ITEMS (Resume, LinkedIn, GitHub) ===== */
+/* ============================
+   INFORMATION ITEMS (Resume, LinkedIn, GitHub)
+=============================== */
 .information-section {
     display: flex;
     justify-content: center;
@@ -177,7 +185,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.35s ease;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .resume-link:hover {
@@ -188,12 +196,14 @@ body {
 .color-info-item {
     color: white;
     font-size: 22px;
-    text-decoration: none;
-    letter-spacing: 1px;
     font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
-/* ===== FOOTER ===== */
+/* ============================
+   FOOTER
+=============================== */
 .footer-section {
     background-color: rgb(79, 37, 83);
     color: white;
@@ -230,14 +240,16 @@ body {
     color: white;
     font-size: 24px;
     margin: 0 10px;
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .footer-item a:hover {
     color: #bcd8f2;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ============================
+   RESPONSIVE
+=============================== */
 @media (max-width: 768px) {
     .about-me {
         flex-direction: column;
@@ -256,4 +268,3 @@ body {
         gap: 20px;
     }
 }
-
